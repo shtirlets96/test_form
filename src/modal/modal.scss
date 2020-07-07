@@ -4,6 +4,7 @@
   background: #FFFFFF;
   padding: 40px 54px 35px 54px;
   box-sizing: border-box;
+  margin: 50px 0 50px 0;
 
   &__background {
     display: none;
@@ -16,8 +17,8 @@
 
   &__wrapper {
     width: 100%;
-    height: 100vh;
-    position: fixed;
+    min-height: 100vh;
+    position: absolute;
     justify-content: center;
     align-items: center;
     display: none;
@@ -106,5 +107,30 @@
   &__submit:focus {
     outline: none;
     border: 2px solid #F9C73B;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .modal {
+    width: auto;
+    margin: 0;
+
+    &__wrapper {
+      align-items: start;
+    }
+
+    &__input,
+    &__input-wrapper,
+    &__input[name="description"] {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .modal {
+    padding: 20px;
   }
 }
