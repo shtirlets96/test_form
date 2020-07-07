@@ -1,0 +1,110 @@
+.modal {
+  width: 600px;
+  min-height: 632px;
+  background: #FFFFFF;
+  padding: 40px 54px 35px 54px;
+  box-sizing: border-box;
+
+  &__background {
+    display: none;
+    background: #E5E5E5;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  &__heading {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    letter-spacing: .02em;
+    color: #000000;
+    margin: 0 0 25px 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__input {
+    color: #1C1C1C;
+    padding: 20px;
+    height: 50px;
+    width: 240px;
+    background: #FDFDFD;
+    border: 1px solid #A5A5A5;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    &-wrapper {
+      margin-bottom: 14px;
+    }
+
+    &-label-text,
+    &-error-text {
+      font-size: 12px;
+      //line-height: 14px;
+      padding-left: 20px;
+    }
+
+    &-label-text {
+      color: #A5A5A5;
+      visibility: hidden;
+      padding-bottom: 5px;
+    }
+
+    &-error-text {
+      padding-top: 5px;
+      color: #F36363;
+      display: none;
+    }
+  }
+
+  &__input[name="description"] {
+    width: 492px;
+    min-height: 150px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  &__license {
+    padding-left: 14px;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 10px 0 30px 0;
+
+    &-link {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__submit-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  &__input:focus,
+  &__submit:focus {
+    outline: none;
+    border: 2px solid #F9C73B;
+  }
+}

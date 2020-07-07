@@ -1,1 +1,3 @@
-import './scss/index.scss';
+import 'normalize.css';
+import './index.scss';
+import './modal/modal';
